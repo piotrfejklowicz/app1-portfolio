@@ -59,6 +59,18 @@ class PostMeta
         return $this;
     }
 
+    public function getContent(): ?string
+    {
+        return $this->content;
+    }
+
+    public function setContent(string $content): self
+    {
+        $this->content = $content;
+
+        return $this;
+    }
+
     public function getSlug(): ?string
     {
         return $this->slug;
