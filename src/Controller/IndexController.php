@@ -18,12 +18,12 @@ class IndexController extends AbstractController
         ]);
     }
     /**
-     * @Route("/{slug}", name="kontakt")
+     * @Route("/kontakt", name="kontakt")
      */
-    public function pageIndex($slug): Response
+    public function pageIndex(): Response
     {
-        return $this->render("index/$slug.html.twig", [
-            'slug' => $slug,
+        return $this->render("index/kontakt.html.twig", [
+            'slug' => 'kontakt',
             'controller_name' => 'IndexController',
         ]);
     }
