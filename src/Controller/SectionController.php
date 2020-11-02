@@ -6,15 +6,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ModuleController extends AbstractController
+class SectionController extends AbstractController
 {
     /**
-     * @Route("/module", name="module")
+     * @Route("/section", name="section")
      */
     public function index(): Response
     {
-        return $this->render('module/index.html.twig', [
-            'controller_name' => 'ModuleController',
+        return $this->render('section/index.html.twig', [
+            'controller_name' => 'SectionController',
         ]);
     }
 }
