@@ -28,6 +28,11 @@ class PostMeta
     private $slug;
 
     /**
+     * @ORM\Column(type="json")
+     */
+    private $content = [];
+
+    /**
      * @ORM\Column(type="integer", nullable=true)
      */
     private $parent;

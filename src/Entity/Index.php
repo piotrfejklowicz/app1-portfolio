@@ -48,6 +48,11 @@ class Index
      */
     private $author;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $parent;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -121,6 +126,18 @@ class Index
     public function setAuthor(string $author): self
     {
         $this->author = $author;
+
+        return $this;
+    }
+
+    public function getParent(): ?string
+    {
+        return $this->parent;
+    }
+
+    public function setParent(string $parent): self
+    {
+        $this->parent = $parent;
 
         return $this;
     }
